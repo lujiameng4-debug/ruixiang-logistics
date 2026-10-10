@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lujiameng4-debug.github.io/ruixiang-logistics/sitemap.xml

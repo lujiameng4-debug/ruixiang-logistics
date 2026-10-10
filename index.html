@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贵港市瑞祥物流 — 以陆运为核心的第三方物流服务商</title>
+  <meta name="description" content="贵港市瑞祥物流提供水泥、粉煤灰、熟料、煤炭及集装箱等大宗物资公路运输服务。了解运输品类、车队配置与业务咨询方式。">
+  <meta name="theme-color" content="#17212b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="贵港市瑞祥物流｜大宗物资运输服务">
+  <meta property="og:description" content="提供水泥、粉煤灰、熟料、煤炭及集装箱运输服务。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      if (localStorage.getItem('rxSidebarCollapsed') === 'true') {
+        document.documentElement.classList.add('sidebar-collapsed-init');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+<!-- 侧边导航栏 -->
+<div id="sidebar" class="sidebar">
+  <a href="#home" class="sidebar-logo" aria-label="返回首页">
+    <img class="brand-seal-logo" src="logo-concepts/04-chinese-seal.png" alt="瑞祥物流">
+  </a>
+  <ul class="sidebar-nav">
+    <li><a href="#home" class="sidebar-link" data-tooltip="首页"><span class="sidebar-icon"><img src="images/icon-home.png" alt="首页" class="sidebar-icon-img"></span><span class="sidebar-text">首页</span></a></li>
+    <li><a href="#about" class="sidebar-link" data-tooltip="关于我们"><span class="sidebar-icon">&#9733;</span><span class="sidebar-text">关于我们</span></a></li>
+    <li><a href="#services" class="sidebar-link" data-tooltip="服务支持"><span class="sidebar-icon"><img src="images/icon-truck.png" alt="服务支持" class="sidebar-icon-img"></span><span class="sidebar-text">服务支持</span></a></li>
+    <li><a href="#routes" class="sidebar-link" data-tooltip="合作伙伴"><span class="sidebar-icon"><img src="images/icon-partner.png" alt="合作伙伴" class="sidebar-icon-img"></span><span class="sidebar-text">合作伙伴</span></a></li>
+    <li><a href="#contact-cta" class="sidebar-link sidebar-cta" data-tooltip="联系我们"><span class="sidebar-icon"><img src="images/icon-contact.png" alt="联系我们" class="sidebar-icon-img"></span><span class="sidebar-text">联系我们</span></a></li>
+  </ul>
+</div>
+<div id="sidebar-trigger"></div>
+<button class="mobile-sidebar-toggle" id="mobileSidebarToggle" aria-label="打开导航菜单" aria-controls="sidebar" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- 首屏 Hero -->
+<section class="hero" id="home">
+
+  <!-- 轮播容器 -->
+  <div class="hero-carousel" id="heroCarousel">
+
+    <!-- 第1页：品牌主页 -->
+    <div class="hero-slide active" data-slide="0">
+      <div class="hero-bg">
+        <video class="hero-video" muted loop playsinline preload="metadata" poster="videos/road-cargo-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="videos/road-cargo-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">RUIXIANG LOGISTICS · GUIGANG, GUANGXI</div>
+        <h1>专注大宗运输<br><span>把每一程交付做好</span></h1>
+        <p class="hero-subtitle">面向水泥、建材、能源及港口物流场景，提供公路货运与车队协同服务。<br>从运力安排到在途沟通，让运输计划清晰、执行有序。</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">了解运输服务</a>
+          <a href="#contact-cta" class="btn btn-outline">沟通运输需求</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">2009</span>
+            <span class="stat-label">成立于</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="200">200</span><span class="stat-unit">+</span>
+            <span class="stat-label">自有车辆（待核实）</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="300">300</span><span class="stat-unit">万吨+</span>
+            <span class="stat-label">年运输量（待核实）</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">6</span><span class="stat-unit">类</span>
+            <span class="stat-label">重点运输品类</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第2页：车队展示 -->
+    <div class="hero-slide" data-slide="1" aria-hidden="true" inert>
+      <div class="hero-bg hero-bg-fleet">
+        <video class="hero-video" muted loop playsinline preload="none" poster="videos/highway-truck-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="videos/highway-truck-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">200+台自有专业车队</div>
+        <h1 style="font-size: clamp(36px,6vw,64px);">运力强劲<br>使命必达</h1>
+        <p class="hero-subtitle">LNG天然气牵引车 · 重型罐式半挂车 · 集装箱挂车<br>稳定高效的运力底盘，全面保障运输时效与服务质量</p>
+        <div class="hero-fleet-cards">
+          <div class="hfc-item">
+            <span class="hfc-name">LNG天然气牵引车</span>
+          </div>
+          <div class="hfc-item">
+            <span class="hfc-name">重型罐式半挂车</span>
+          </div>
+          <div class="hfc-item">
+            <span class="hfc-name">集装箱挂车</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">查看车型与服务</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第3页：合作伙伴 -->
+    <div class="hero-slide" data-slide="2" aria-hidden="true" inert>
+      <div class="hero-bg hero-bg-routes">
+        <video class="hero-video" muted loop playsinline preload="none" poster="videos/port-containers-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="videos/port-containers-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">🤝 长期战略合作伙伴</div>
+        <h1 style="font-size: clamp(36px,6vw,64px);">深度合作<br>值得信赖</h1>
+        <p class="hero-subtitle">与多家知名企业建立长期战略合作<br>年物流吞吐量超过300万吨</p>
+        <div class="hero-routes-list">
+          <div class="hrl-item">
+            <span class="hrl-tag">水泥</span>
+            <span class="hrl-route">贵港台泥 · 柳州台泥 · 贵港华润</span>
+            <span class="hrl-info">水泥、熟料运输</span>
+          </div>
+          <div class="hrl-item">
+            <span class="hrl-tag">电力</span>
+            <span class="hrl-route">贵港电厂 · 红水河水泥厂</span>
+            <span class="hrl-info">粉煤灰、煤炭运输</span>
+          </div>
+          <div class="hrl-item">
+            <span class="hrl-tag">物流</span>
+            <span class="hrl-route">广西兴桂船运 · 广西晟皓物流</span>
+            <span class="hrl-info">集装箱、散货联运</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第4页：为何选择我们 -->
+    <div class="hero-slide" data-slide="3" aria-hidden="true" inert>
+      <div class="hero-bg hero-bg-service">
+        <video class="hero-video" muted loop playsinline preload="none" poster="videos/warehouse-inventory-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="videos/warehouse-inventory-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">🛡️ 为何选择瑞祥物流</div>
+        <h1 style="font-size: clamp(36px,6vw,64px);">品质服务<br>值得托付</h1>
+        <p class="hero-subtitle">以"高品质、高标准"为服务核心<br>为您提供稳定、可靠的定制化物流解决方案</p>
+        <div class="hero-guarantees">
+          <div class="hg-item">
+            <span class="hg-text">200+台自有车辆，运力可控</span>
+          </div>
+          <div class="hg-item">
+            <span class="hg-text">GPS实时追踪与动态监控</span>
+          </div>
+          <div class="hg-item">
+            <span class="hg-text">团队10年+行业经验</span>
+          </div>
+          <div class="hg-item">
+            <span class="hg-text">全额保险，消除安全顾虑</span>
+          </div>
+          <div class="hg-item">
+            <span class="hg-text">一对一专属客服24h响应</span>
+          </div>
+          <div class="hg-item">
+            <span class="hg-text">LNG绿色环保运输</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-carousel -->
+
+  <!-- 轮播控制 -->
+  <div class="carousel-controls" aria-label="首页轮播控制">
+    <div class="carousel-dots" id="carouselDots">
+      <button class="carousel-dot active" data-dot="0" aria-label="品牌介绍"></button>
+      <button class="carousel-dot" data-dot="1" aria-label="车队运力"></button>
+      <button class="carousel-dot" data-dot="2" aria-label="合作网络"></button>
+      <button class="carousel-dot" data-dot="3" aria-label="服务保障"></button>
+    </div>
+  </div>
+
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+      <path d="M0,80 C240,160 480,0 720,80 C960,160 1200,20 1440,80 L1440,160 L0,160 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+</section>
+
+<!-- 关于我们 (父板块) -->
+<section class="section about" id="about">
+  <div class="container wide">
+    <div class="section-header section-header-watermark" data-watermark="ABOUT US">
+      <span class="section-tag">ABOUT US</span>
+      <h2>关于我们</h2>
+      <p class="section-desc">以陆运为核心，十六年专业深耕</p>
+    </div>
+
+    <!-- 子板块导航标签 -->
+    <div class="about-tabs" role="tablist" aria-label="关于我们内容">
+      <button class="about-tab active" id="about-tab-intro" data-tab="intro" role="tab" aria-controls="tab-intro" aria-selected="true">公司简介</button>
+      <button class="about-tab" id="about-tab-history" data-tab="history" role="tab" aria-controls="tab-history" aria-selected="false" tabindex="-1">发展历程</button>
+      <button class="about-tab" id="about-tab-culture" data-tab="culture" role="tab" aria-controls="tab-culture" aria-selected="false" tabindex="-1">企业文化</button>
+      <button class="about-tab" id="about-tab-honors" data-tab="honors" role="tab" aria-controls="tab-honors" aria-selected="false" tabindex="-1">企业荣誉</button>
+      <button class="about-tab" id="about-tab-certs" data-tab="certs" role="tab" aria-controls="tab-certs" aria-selected="false" tabindex="-1">企业资质</button>
+      <button class="about-tab" id="about-tab-csr" data-tab="csr" role="tab" aria-controls="tab-csr" aria-selected="false" tabindex="-1">社会关怀</button>
+    </div>
+
+    <!-- 标签页内容区域 -->
+    <div class="about-tab-panels">
+
+      <!-- 公司简介 -->
+      <div class="about-tab-panel active" id="tab-intro">
+        <div class="about-grid">
+          <div class="about-text">
+            <p><strong class="company-name">贵港市瑞祥物流有限责任公司</strong>成立于2009年, 注册资本1300万元, 现有员工100+人, 是一家以陆运为核心的<strong>第三方物流服务商</strong>. 公司致力于为客户提供高效、安全、可靠的运输解决方案。</p>
+            <p>公司主营<strong>水泥、粉煤灰、熟料、煤炭、集装箱</strong>等大宗物资及散货运输, 已与贵港台泥、柳州台泥、贵港华润、贵港电厂、红水河水泥厂、武宣华润水泥厂等多家知名企业建立长期战略合作, <strong>年物流吞吐量超300万吨</strong>。</p>
+            <div class="about-features">
+              <div class="about-feature"><strong>强大运力</strong> - 自有车辆200+台, 运力稳定可控</div>
+              <div class="about-feature"><strong>科技驱动</strong> - GPS实时追踪, 动态监控</div>
+              <div class="about-feature"><strong>专业团队</strong> - 平均10年+物流行业经验</div>
+              <div class="about-feature"><strong>全程保障</strong> - 全额保险,7x24小时响应</div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="news-img-carousel">
+              <div class="news-img-slide active">
+                <video muted playsinline loop preload="metadata" poster="videos/about-freight-poster.jpg" aria-label="公路货运车队场景示意"><source src="videos/about-freight.mp4" type="video/mp4"></video>
+                <div class="news-img-caption">公路货运车队 · 场景示意</div>
+              </div>
+              <div class="news-img-slide">
+                <video muted playsinline loop preload="none" poster="videos/about-trailers-poster.jpg" aria-label="跨区域货运场景示意"><source src="videos/about-trailers.mp4" type="video/mp4"></video>
+                <div class="news-img-caption">跨区域货运 · 场景示意</div>
+              </div>
+              <div class="news-img-slide">
+                <video muted playsinline loop preload="none" poster="videos/about-port-poster.jpg" aria-label="港口集装箱装卸场景示意"><source src="videos/about-port.mp4" type="video/mp4"></video>
+                <div class="news-img-caption">港口集装箱装卸 · 场景示意</div>
+              </div>
+              <div class="news-img-dots">
+                <span class="news-img-dot active"></span>
+                <span class="news-img-dot"></span>
+                <span class="news-img-dot"></span>
+              </div>
+            </div>
+            <div class="news-panel">
+              <div class="news-header">
+                <h4>新闻资讯</h4>
+                <span class="news-badge">NEWS</span>
+              </div>
+              <div class="news-list">
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】合作动态标题待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】车队与运力动态待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】安全管理动态待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】运营服务动态待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】企业活动资讯待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+                <div class="news-item news-item-placeholder" aria-label="示例新闻，发布前替换为真实内容">
+                  <span class="news-title">【示例内容】客户合作案例待更新</span>
+                  <span class="news-date">日期待补充</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 发展历程 -->
+      <div class="about-tab-panel" id="tab-history">
+        <div class="history-showcase">
+          <div class="history-carousel-wrapper">
+            <div class="history-carousel-track">
+              <div class="history-card active" data-year="0">
+                <div class="history-card-img">
+                  <img src="images/fleet-tanker.png" alt="2009">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2009</div>
+                  <h3>公司成立</h3>
+                  <p>贵港市瑞祥物流有限责任公司正式注册成立，注册资本1300万元，以大宗物资陆运服务起步，开启物流创业之路。</p>
+                </div>
+              </div>
+              <div class="history-card" data-year="1">
+                <div class="history-card-img">
+                  <img src="images/fleet-tanker.png" alt="2012">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2012</div>
+                  <h3>业务拓展</h3>
+                  <p>成功与贵港台泥、贵港华润等知名企业建立长期战略合作，业务范围从水泥运输拓展至粉煤灰、熟料等多品类大宗物资运输。</p>
+                </div>
+              </div>
+              <div class="history-card" data-year="2">
+                <div class="history-card-img">
+                  <img src="images/fleet-lng.png" alt="2015">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2015</div>
+                  <h3>车队升级</h3>
+                  <p>大规模引进专业运输车辆，车队规模突破100台，同步部署GPS实时追踪系统，实现全程动态监控，运输效率与安全性显著提升。</p>
+                </div>
+              </div>
+              <div class="history-card" data-year="3">
+                <div class="history-card-img">
+                  <img src="images/fleet-lng-2.png" alt="2018">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2018</div>
+                  <h3>绿色转型</h3>
+                  <p>率先大批量引进LNG天然气牵引车，推动绿色运输转型，降低碳排放，响应国家节能减排政策，树立行业环保标杆。</p>
+                </div>
+              </div>
+              <div class="history-card" data-year="4">
+                <div class="history-card-img">
+                  <img src="images/fleet-container.png" alt="2021">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2021</div>
+                  <h3>规模跨越</h3>
+                  <p>自有车辆突破200台，合作伙伴扩展至柳州台泥、武宣华润水泥厂等，年物流吞吐量突破300万吨，成为广西区域领先的第三方物流服务商。</p>
+                </div>
+              </div>
+              <div class="history-card" data-year="5">
+                <div class="history-card-img">
+                  <img src="images/fleet-lng.png" alt="2024">
+                </div>
+                <div class="history-card-text">
+                  <div class="history-card-year">2024</div>
+                  <h3>数智升级</h3>
+                  <p>全面推进信息化与数字化管理，优化调度系统与客户服务平台，持续提升运营效率与服务品质，迈向智慧物流新阶段。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="history-timeline">
+            <button type="button" class="history-arrow history-arrow-left" aria-label="上一个"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg></button>
+            <div class="history-track">
+              <button type="button" class="history-node active" data-index="0" aria-current="step">
+                <span class="history-node-year">2009</span>
+              </button>
+              <span class="history-node-line"></span>
+              <button type="button" class="history-node" data-index="1">
+                <span class="history-node-year">2012</span>
+              </button>
+              <span class="history-node-line"></span>
+              <button type="button" class="history-node" data-index="2">
+                <span class="history-node-year">2015</span>
+              </button>
+              <span class="history-node-line"></span>
+              <button type="button" class="history-node" data-index="3">
+                <span class="history-node-year">2018</span>
+              </button>
+              <span class="history-node-line"></span>
+              <button type="button" class="history-node" data-index="4">
+                <span class="history-node-year">2021</span>
+              </button>
+              <span class="history-node-line"></span>
+              <button type="button" class="history-node" data-index="5">
+                <span class="history-node-year">2024</span>
+              </button>
+            </div>
+            <button type="button" class="history-arrow history-arrow-right" aria-label="下一个"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 企业文化 -->
+      <div class="about-tab-panel" id="tab-culture">
+        <div class="vision-content">
+          <div class="vision-main">
+            <div class="vision-quote">
+              <span class="quote-mark">&#10077;</span>
+              <p>公司十六年来始终秉持<strong>"以客户为中心"</strong>的服务理念，坚持<strong>"服务你我，共创辉煌"</strong>，依托区域路网资源与信息化管理手段，构建完整的物流服务价值链，为客户提供专业化、全流程的一站式物流解决方案。</p>
+            </div>
+            <div class="vision-features">
+              <div class="about-feature"><strong>服务理念</strong> - 以客户为中心，想客户之所想，急客户之所急</div>
+              <div class="about-feature"><strong>企业使命</strong> - 服务你我，共创辉煌</div>
+              <div class="about-feature"><strong>发展方向</strong> - 依托信息化管理与区域路网资源，打造一站式物流服务平台</div>
+              <div class="about-feature"><strong>服务标准</strong> - 以高品质、高标准为核心，提供稳定可靠的定制化物流方案</div>
+              <div class="about-feature"><strong>员工关怀</strong> - 为员工缴纳五险一金，重视团队保障与长期发展</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 企业荣誉 -->
+      <div class="about-tab-panel" id="tab-honors">
+        <div class="honors-marquee">
+          <div class="honors-track">
+            <div class="honors-slide">
+              <span class="honors-year">2025年度</span>
+              <h3>贵港市纳税贡献突出企业</h3>
+              <p>连续多年依法诚信纳税，为地方财政做出积极贡献</p>
+            </div>
+            <div class="honors-slide">
+              <span class="honors-year">2024年度</span>
+              <h3>广西道路运输安全生产先进单位</h3>
+              <p>连续多年保持零重大事故记录</p>
+            </div>
+            <div class="honors-slide">
+              <span class="honors-year">2025年度</span>
+              <h3>AAA级信用企业</h3>
+              <p>连续多年获评AAA级信用等级</p>
+            </div>
+            <div class="honors-slide">
+              <span class="honors-year">2024年度</span>
+              <h3>优秀物流合作伙伴</h3>
+              <p>获台泥集团、华润水泥等多家企业授予</p>
+            </div>
+            <div class="honors-slide">
+              <span class="honors-year">2023年度</span>
+              <h3>绿色运输示范企业</h3>
+              <p>率先大规模采用LNG天然气车辆，获评区域示范</p>
+            </div>
+            <div class="honors-slide">
+              <span class="honors-year">2023年度</span>
+              <h3>社会责任贡献先进企业</h3>
+              <p>积极参与公益事业与社区建设，热心回馈社会</p>
+            </div>
+          </div>
+        </div>
+        <div class="honors-certs-marquee">
+          <div class="honors-certs-track">
+            <div class="honors-cert-item"><img src="images/honor-cert-1.png" alt="AAA级信用企业"></div>
+            <div class="honors-cert-item"><img src="images/honor-cert-2.png" alt="安全生产先进单位"></div>
+            <div class="honors-cert-item"><img src="images/honor-cert-3.png" alt="纳税贡献突出企业"></div>
+            <div class="honors-cert-item"><img src="images/honor-cert-4.png" alt="优秀物流合作伙伴"></div>
+            <div class="honors-cert-item"><img src="images/honor-cert-5.png" alt="绿色运输示范企业"></div>
+            <div class="honors-cert-item"><img src="images/honor-cert-6.png" alt="社会责任贡献奖"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 企业资质 -->
+      <div class="about-tab-panel" id="tab-certs">
+        <div class="certs-list">
+          <div class="certs-row">
+            <div class="certs-row-images">
+              <img src="images/honor-cert-1.png" alt="道路运输经营许可证">
+              <img src="images/honor-cert-2.png" alt="危险货物运输许可证">
+            </div>
+            <div class="certs-row-text">
+              <h3>道路运输经营许可证</h3>
+              <p>公司持有合法有效的道路运输经营许可证，具备普通货物运输及大件运输资质，严格按照交通运输部门规定合规经营。</p>
+            </div>
+          </div>
+          <div class="certs-row">
+            <div class="certs-row-images">
+              <img src="images/honor-cert-3.png" alt="安全生产标准化证书">
+              <img src="images/honor-cert-4.png" alt="质量管理体系认证">
+            </div>
+            <div class="certs-row-text">
+              <h3>安全生产标准化证书</h3>
+              <p>通过交通运输企业安全生产标准化考评，建立完善的安全管理体系，定期开展安全培训与隐患排查，确保运输安全。</p>
+            </div>
+          </div>
+          <div class="certs-row">
+            <div class="certs-row-images">
+              <img src="images/honor-cert-5.png" alt="营业执照">
+            </div>
+            <div class="certs-row-text">
+              <h3>全额货物运输保险</h3>
+              <p>与知名保险公司合作，为每批货物提供全额运输保险保障，从装车到卸货全程覆盖，让客户无后顾之忧。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 社会关怀 -->
+      <div class="about-tab-panel" id="tab-csr">
+        <div class="csr-intro">
+          <p>瑞祥物流始终秉持<strong>"取之于社会，回馈于社会"</strong>的理念，自成立以来积极参与抗灾救援、扶贫助困、教育公益等各类社会公益活动，累计捐赠物资及资金数十万元，以实际行动传递温暖与力量。</p>
+        </div>
+        <div class="csr-events">
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-disaster.png" alt="抗洪救灾物资运输">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2024年6月</span>
+              <h3>抗洪救灾应急物资运输</h3>
+              <p>广西贵港遭遇特大暴雨洪灾，瑞祥物流第一时间调配8辆运输车参与救灾，免费运输帐篷、饮用水、食品等救援物资共计120吨，保障灾区物资供应通道畅通。</p>
+              <div class="csr-event-tag">捐赠运力价值约15万元</div>
+            </div>
+          </div>
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-donation.png" alt="扶贫帮困捐赠">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2023年12月</span>
+              <h3>冬季扶贫帮困慰问活动</h3>
+              <p>组织公司员工前往贵港市覃塘区贫困村开展冬季慰问活动，向50户困难家庭捐赠棉被、食用油、大米等生活物资，并为孤寡老人送去慰问金。</p>
+              <div class="csr-event-tag">捐赠物资及慰问金合计8万元</div>
+            </div>
+          </div>
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-education.png" alt="助学兴教">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2023年9月</span>
+              <h3>金秋助学 · 捐资兴教</h3>
+              <p>向贵港市港南区中学捐赠助学金，资助30名品学兼优的贫困学子完成学业，并为学校购置教学设备和图书。</p>
+              <div class="csr-event-tag">捐赠助学金及设备共计12万元</div>
+            </div>
+          </div>
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-covid.png" alt="疫情防控物资运输">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2022年3月</span>
+              <h3>疫情防控物资保障运输</h3>
+              <p>新冠疫情期间，积极响应政府号召，调配专用车辆运输口罩、消毒液、防护服等防疫物资，同时向一线防疫人员捐赠矿泉水和方便食品。</p>
+              <div class="csr-event-tag">免费运输防疫物资80余吨，捐赠物资约5万元</div>
+            </div>
+          </div>
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-green.png" alt="绿色环保行动">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2021年至今</span>
+              <h3>绿色运输 · 节能减排</h3>
+              <p>率先大规模采用LNG天然气牵引车替换传统柴油车辆，目前LNG车辆占比超过60%。每年减少碳排放约2000吨，获评区域绿色运输示范企业。</p>
+              <div class="csr-event-tag">累计减少碳排放超6000吨</div>
+            </div>
+          </div>
+          <div class="csr-event">
+            <div class="csr-event-img">
+              <img src="images/csr-community.png" alt="社区共建">
+            </div>
+            <div class="csr-event-body">
+              <span class="csr-event-date">2020年至今</span>
+              <h3>参与地方基础设施建设</h3>
+              <p>积极参与贵港市乡村道路修缮和社区公共设施建设，出资出力帮助周边村庄改善道路交通条件，助力乡村振兴。</p>
+              <div class="csr-event-tag">累计投入资金及运力价值超20万元</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 服务支持 (父板块) -->
+<section class="section services" id="services">
+  <div class="container wide">
+    <div class="section-header section-header-watermark" data-watermark="SERVICE">
+      <span class="section-tag">SERVICE & SUPPORT</span>
+      <h2>服务支持</h2>
+      <p class="section-desc">专业运输服务，强大运力保障</p>
+    </div>
+
+        <h3 class="fleet-section-title" id="fleet-title">车型与运力</h3>
+        <div class="fleet-carousel" id="fleetCarousel" aria-labelledby="fleet-title">
+          <div class="fleet-carousel-stage">
+          <div class="fleet-carousel-track">
+
+            <div class="fleet-slide active" data-fslide="0">
+              <div class="fleet-slide-inner">
+                <div class="fleet-slide-img">
+                  <div class="img-sub-carousel">
+                    <div class="img-sub-slide active">
+                      <img src="images/fleet-lng.png" alt="LNG天然气牵引车 车型一">
+                    </div>
+                    <div class="img-sub-slide">
+                      <img src="images/fleet-lng-2.png" alt="LNG天然气牵引车 车型二">
+                    </div>
+                    <div class="img-sub-dots">
+                      <button class="img-sub-dot active" aria-label="查看第1张牵引车照片"></button>
+                      <button class="img-sub-dot" aria-label="查看第2张牵引车照片"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="fleet-slide-info">
+                  <span class="fleet-slide-badge">车队展示</span>
+                  <h3>LNG天然气牵引车</h3>
+                  <h4>6X4 LNG牵引车 · 340/380马力</h4>
+                  <ul>
+                    <li>含40台国六排放标准车辆，绿色环保</li>
+                    <li>采用LNG天然气动力，大幅降低碳排放与运营成本</li>
+                    <li>适用于水泥、煤炭等大宗物资的中长途运输</li>
+                    <li>动力强劲、续航能力优秀，满足高频次调度需求</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="fleet-slide" data-fslide="1">
+              <div class="fleet-slide-inner">
+                <div class="fleet-slide-img">
+                  <img src="images/fleet-tanker.png" alt="重型罐式半挂车" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                  <div class="fleet-slide-img-fallback">
+                    <em>重型罐式半挂车</em>
+                  </div>
+                </div>
+                <div class="fleet-slide-info">
+                  <span class="fleet-slide-badge">车型展示</span>
+                  <h3>重型罐式半挂车</h3>
+                  <h4>散装物料专用运输车</h4>
+                  <ul>
+                    <li>全密封罐体设计，防潮防扬尘，确保货物品质</li>
+                    <li>专业承运水泥、粉煤灰、熟料等散装物料</li>
+                    <li>配备气动卸料系统，装卸效率高、损耗低</li>
+                    <li>车辆定期保养维护，出勤率保持行业领先水平</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="fleet-slide" data-fslide="2">
+              <div class="fleet-slide-inner">
+                <div class="fleet-slide-img">
+                  <img src="images/fleet-container.png" alt="集装箱挂车" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                  <div class="fleet-slide-img-fallback">
+                    <em>集装箱挂车</em>
+                  </div>
+                </div>
+                <div class="fleet-slide-info">
+                  <span class="fleet-slide-badge">车型展示</span>
+                  <h3>集装箱挂车</h3>
+                  <h4>标准集装箱转运平台</h4>
+                  <ul>
+                    <li>支持20尺/40尺标准集装箱拖运</li>
+                    <li>高效对接码头与物流园区，缩短周转时间</li>
+                    <li>车队规模大、调度灵活，满足高峰期运力需求</li>
+                    <li>配合船运与铁路实现多式联运，覆盖范围广</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="fleet-arrow fleet-prev" id="fleetPrev" aria-label="上一款车型"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg></button>
+          <button class="fleet-arrow fleet-next" id="fleetNext" aria-label="下一款车型"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
+          </div>
+
+          <div class="fleet-dots" id="fleetDots" aria-label="选择车型">
+            <button class="fleet-dot active" data-fdot="0" aria-label="查看第1款车型"></button>
+            <button class="fleet-dot" data-fdot="1" aria-label="查看第2款车型"></button>
+            <button class="fleet-dot" data-fdot="2" aria-label="查看第3款车型"></button>
+          </div>
+        </div>
+
+        <div class="fleet-certs">
+          <h3>服务项目</h3>
+          <div class="certs-grid service-types-grid">
+            <div class="cert-card service-card" id="service-cement" tabindex="0">
+              <h4>水泥运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>密封防潮 · 直达交付</strong><span>散装水泥罐车运输，直达搅拌站、工地，保障水泥品质不受影响。</span></div><div class="service-card-details"><span><b>运输吨数</b> 按批次核定</span><span><b>运输单价</b> 按线路与运量询价</span><span><b>交付信息</b> 可确认卸料地点与时段</span></div></div>
+            </div>
+            <div class="cert-card service-card" id="service-flyash" tabindex="0">
+              <h4>粉煤灰运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>全密封罐车承运</strong><span>电厂粉煤灰散装运输，防扬尘、防受潮，安全高效送达目的地。</span></div><div class="service-card-details"><span><b>运输吨数</b> 按批次核定</span><span><b>运输单价</b> 按线路与运量询价</span><span><b>作业信息</b> 可确认装卸方式与防潮要求</span></div></div>
+            </div>
+            <div class="cert-card service-card" id="service-clinker" tabindex="0">
+              <h4>熟料运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>高频次稳定供应</strong><span>水泥熟料散装运输，从生产基地送达水泥厂，保障生产线不停歇。</span></div><div class="service-card-details"><span><b>运输吨数</b> 按日计划或批次核定</span><span><b>运输单价</b> 按线路与运量询价</span><span><b>调度信息</b> 可确认发运频次与到厂时间</span></div></div>
+            </div>
+            <div class="cert-card service-card" id="service-coal" tabindex="0">
+              <h4>煤炭运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>自有 LNG 牵引车承运</strong><span>服务电厂及工业用煤运输，运力充沛，保障供应。</span></div><div class="service-card-details"><span><b>运输吨数</b> 按批次或周期核定</span><span><b>运输单价</b> 按线路与运量询价</span><span><b>交付信息</b> 可确认过磅与卸货要求</span></div></div>
+            </div>
+            <div class="cert-card service-card" id="service-container" tabindex="0">
+              <h4>集装箱运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>20 尺 / 40 尺标准箱</strong><span>自有 80+ 台集装箱挂车，对接码头与物流园高效作业。</span></div><div class="service-card-details"><span><b>箱型箱量</b> 20 尺 / 40 尺，数量待确认</span><span><b>运输单价</b> 按箱型与线路询价</span><span><b>交接信息</b> 可确认提还箱与码头预约</span></div></div>
+            </div>
+            <div class="cert-card service-card" id="service-bulk" tabindex="0">
+              <h4>散货运输</h4>
+              <div class="service-card-body"><div class="service-card-default"><strong>灵活调度与结算</strong><span>承运砂石、建材等大宗散货，支持按车次或按吨结算。</span></div><div class="service-card-details"><span><b>运输吨数</b> 按过磅或批次核定</span><span><b>运输单价</b> 按吨或按车次询价</span><span><b>作业信息</b> 可确认装卸条件与交付地点</span></div></div>
+            </div>
+          </div>
+          <!-- 资质与保障：待真实资料核实后恢复展示。
+          <h3>资质与保障</h3>
+          <div class="certs-grid assurance-grid">
+            <div class="cert-card">
+              <h4>道路运输经营许可证</h4>
+              <p><strong>合法资质 · 合规经营</strong><span>持有道路运输经营许可证，具备普通货物运输及大件运输资质。</span></p>
+            </div>
+            <div class="cert-card">
+              <h4>全额货物运输保险</h4>
+              <p><strong>装车至卸货全程覆盖</strong><span>与知名保险公司合作，为每批货物提供全额运输保险保障。</span></p>
+            </div>
+            <div class="cert-card">
+              <h4>司机从业资格证</h4>
+              <p><strong>持证上岗 · 定期培训</strong><span>驾驶员均持有合法从业资格证，定期接受培训与考核。</span></p>
+            </div>
+            <div class="cert-card">
+              <h4>国六排放标准</h4>
+              <p><strong>绿色低碳运输</strong><span>车辆符合国六排放标准，积极响应环保政策。</span></p>
+            </div>
+            <div class="cert-card">
+              <h4>GPS实时追踪监控</h4>
+              <p><strong>24 小时在途可视</strong><span>全车队配备 GPS 定位系统，实时掌握货物在途状态。</span></p>
+            </div>
+            <div class="cert-card">
+              <h4>一对一专属客服</h4>
+              <p><strong>专人跟进运输需求</strong><span>为客户配备专属客服经理，提供个性化物流解决方案。</span></p>
+            </div>
+          </div>
+          -->
+        </div>
+  </div>
+</section>
+
+<!-- 合作伙伴 -->
+<section class="section routes" id="routes">
+  <div class="container wide">
+    <div class="section-header section-header-watermark" data-watermark="PARTNERS">
+      <span class="section-tag">PARTNERS</span>
+      <h2>合作伙伴</h2>
+      <p class="section-desc">长期战略合作，年吞吐量超300万吨</p>
+    </div>
+    <div class="partner-carousel">
+      <div class="partner-track-wrapper">
+        <div class="partner-track">
+          <div class="partner-logo-item">
+            <img src="images/logo-tcc.png" alt="台泥水泥">
+            <span>贵港台泥 · 柳州台泥</span>
+          </div>
+          <div class="partner-logo-item">
+            <img src="images/logo-cr-cement.png" alt="华润水泥">
+            <span>贵港华润 · 武宣华润水泥厂</span>
+          </div>
+          <div class="partner-logo-item partner-logo-text">
+            <div class="partner-text-logo">贵港电厂</div>
+            <span>煤炭 · 粉煤灰运输</span>
+          </div>
+          <div class="partner-logo-item partner-logo-text">
+            <div class="partner-text-logo">红水河水泥厂</div>
+            <span>水泥 · 熟料运输</span>
+          </div>
+          <div class="partner-logo-item partner-logo-text">
+            <div class="partner-text-logo">广西兴桂船运</div>
+            <span>集装箱 · 散货联运</span>
+          </div>
+          <div class="partner-logo-item partner-logo-text">
+            <div class="partner-text-logo">广西晟皓物流</div>
+            <span>物流协作</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="routes-note">* 以上为主要合作伙伴，亦可根据客户需求拓展合作范围</p>
+  </div>
+</section>
+
+<!-- 服务流程 -->
+<section class="section process">
+  <div class="container">
+    <div class="section-header section-header-watermark" data-watermark="PROCESS">
+      <span class="section-tag">PROCESS</span>
+      <h2>服务流程</h2>
+      <p class="section-desc">规范透明，每一步都让您放心</p>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h4>需求对接</h4>
+        <p>了解货物类型、吨数、装卸地点，制定运输方案</p>
+      </div>
+      <div class="step-arrow">&#10132;</div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h4>签订合同</h4>
+        <p>明确运价、结算方式、保险责任，签订运输合同</p>
+      </div>
+      <div class="step-arrow">&#10132;</div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h4>调度派车</h4>
+        <p>根据货物类型安排合适车型，指派经验丰富的司机</p>
+      </div>
+      <div class="step-arrow">&#10132;</div>
+      <div class="step">
+        <div class="step-number">04</div>
+        <h4>装货过磅</h4>
+        <p>码头装货，过磅称重，记录吨数，开具磅单</p>
+      </div>
+      <div class="step-arrow">&#10132;</div>
+      <div class="step">
+        <div class="step-number">05</div>
+        <h4>安全运输</h4>
+        <p>GPS全程监控，实时掌握车辆位置和运输状态</p>
+      </div>
+      <div class="step-arrow">&#10132;</div>
+      <div class="step">
+        <div class="step-number">06</div>
+        <h4>卸货签收</h4>
+        <p>到达卸货点，再次过磅核实，客户签收确认</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 联系我们 -->
+<!-- 页脚 -->
+<section class="contact-cta" id="contact-cta" aria-labelledby="contact-cta-title">
+  <div class="container contact-cta-inner">
+    <div class="quote-intro">
+      <span class="section-tag">TALK TO OUR TEAM</span>
+      <h2 id="contact-cta-title">有运输需求？先聊聊线路与货物</h2>
+      <p>告知货物类型、起讫地点和计划运量，我们将尽快沟通适配方案。</p>
+      <ul class="inquiry-cues" aria-label="咨询时可提供的信息">
+        <li>货物类型</li>
+        <li>起讫地点</li>
+        <li>计划运量</li>
+      </ul>
+    </div>
+    <div class="contact-cta-actions">
+      <a class="btn btn-primary" href="tel:07754351900">电话沟通</a>
+      <a class="btn btn-outline-dark" href="mailto:ruixiangwuliu@126.com?subject=%E8%BF%90%E8%BE%93%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2">发送邮件</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="quote-panel">
+      <div class="quote-panel-heading">
+        <div><span class="quote-step">01 / 填写运输信息</span><h3>提交运输需求</h3></div>
+        <p>留下线路、货物信息和联系方式，业务人员收到后会与您沟通运输方案。</p>
+      </div>
+      <form id="freightQuoteForm" class="quote-form" novalidate>
+        <div class="quote-field"><label for="quoteOrigin">装车点 <span>*</span></label><input id="quoteOrigin" name="origin" type="text" placeholder="例：广西贵港市港北区某工厂" autocomplete="street-address" maxlength="100" required></div>
+        <div class="quote-field"><label for="quoteDestination">卸车点 <span>*</span></label><input id="quoteDestination" name="destination" type="text" placeholder="例：广西南宁市青秀区某工地" maxlength="100" required></div>
+        <div class="quote-field"><label for="quoteTonnes">货物重量（吨） <span>*</span></label><input id="quoteTonnes" name="tonnes" type="number" min="0.1" max="5000" step="0.1" inputmode="decimal" placeholder="例：30" required></div>
+        <div class="quote-field"><label for="quoteCargo">货物类型</label><div class="quote-select-wrap"><select id="quoteCargo" name="cargo"><option value="cement">水泥</option><option value="flyash">粉煤灰</option><option value="clinker">熟料</option><option value="coal">煤炭</option><option value="container">集装箱</option><option value="bulk">其他散货</option><option value="other">其他货物</option></select></div></div>
+        <div class="quote-field"><label for="quoteContact">联系人 <span>*</span></label><input id="quoteContact" name="contact" type="text" placeholder="请填写称呼" autocomplete="name" maxlength="50" required></div>
+        <div class="quote-field"><label for="quotePhone">联系电话 <span>*</span></label><input id="quotePhone" name="phone" type="tel" inputmode="tel" placeholder="便于业务人员与您联系" autocomplete="tel" maxlength="30" required></div>
+        <div class="quote-field quote-field-wide"><label for="quoteNotes">补充要求 <small>选填</small></label><input id="quoteNotes" name="notes" type="text" placeholder="例：装卸时间、是否需要过磅、集装箱规格" maxlength="200"></div>
+        <div class="quote-submit"><button class="btn btn-primary" type="submit">提交运输需求</button><span>提交的信息仅用于本次运输需求沟通。</span></div>
+        <div class="quote-honeypot" aria-hidden="true"><label for="quoteWebsite">网站</label><input id="quoteWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      </form>
+      <div id="freightQuoteStatus" class="quote-status" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img class="brand-seal-logo" src="logo-concepts/04-chinese-seal.png" alt="瑞祥物流"></div>
+        <p>以陆运为核心的第三方物流服务商<br>高效 · 安全 · 可靠</p>
+      </div>
+      <div class="footer-links">
+        <h4>快速导航</h4>
+        <a href="#home">首页</a>
+        <a href="#about">关于我们</a>
+        <a href="#services">服务支持</a>
+        <a href="#routes">合作伙伴</a>
+        <a href="#contact-cta">联系我们</a>
+      </div>
+      <div class="footer-links">
+        <h4>服务项目</h4>
+        <a href="#service-cement">水泥运输</a>
+        <a href="#service-flyash">粉煤灰运输</a>
+        <a href="#service-clinker">熟料运输</a>
+        <a href="#service-coal">煤炭运输</a>
+        <a href="#service-container">集装箱运输</a>
+        <a href="#service-bulk">散货运输</a>
+      </div>
+      <div class="footer-links">
+        <h4>联系方式</h4>
+        <a href="tel:07754351900" class="contact-primary">&#128222; 0775-4351900 <span>业务咨询电话</span></a>
+        <a href="mailto:ruixiangwuliu@126.com">&#128231; ruixiangwuliu@126.com</a>
+        <p class="contact-address">&#128205; 贵港市港北区港城镇平富村逢富屯</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyrightYear">2026</span> 贵港市瑞祥物流有限责任公司 版权所有 <span class="icp-placeholder">| 备案号待补充（正式发布前替换）</span></p>
+      <!-- 发布前核实经营数据、客户名称与标识、资质荣誉、联系电话、邮箱、地址和备案信息。 -->
+    </div>
+  </div>
+</footer>
+
+<script src="inquiry-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
