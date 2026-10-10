@@ -1552,6 +1552,14 @@ html.sidebar-collapsed-init body {
   text-align: center;
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  color: inherit;
+  text-decoration: none;
+}
+
+.honors-slide:hover,
+.honors-slide:focus-visible {
+  border-color: var(--accent);
+  outline-offset: 3px;
 }
 
 .honors-slide-icon {

@@ -491,87 +491,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ========== 发展历程时间轴 ==========
-  const historyCards = document.querySelectorAll('.history-card');
-  const historyNodes = document.querySelectorAll('.history-node');
-  const historyLeftBtn = document.querySelector('.history-arrow-left');
-  const historyRightBtn = document.querySelector('.history-arrow-right');
-  const historyTrack = document.querySelector('.history-carousel-track');
-  const historyWrapper = document.querySelector('.history-carousel-wrapper');
-  const historyTimelineTrack = document.querySelector('.history-track');
-
-  if (historyCards.length > 0 && historyTrack && historyWrapper) {
-    let historyIdx = 0;
-
-    function showHistoryCard(idx) {
-      if (idx < 0 || idx >= historyCards.length) return;
-      historyIdx = idx;
-
-      historyCards.forEach(c => {
-        c.classList.remove('active', 'adjacent');
-      });
-      historyNodes.forEach(n => {
-        n.classList.remove('active');
-        n.removeAttribute('aria-current');
-      });
-
-      historyCards[idx].classList.add('active');
-      if (idx - 1 >= 0) historyCards[idx - 1].classList.add('adjacent');
-      if (idx + 1 < historyCards.length) historyCards[idx + 1].classList.add('adjacent');
-
-      historyNodes[idx].classList.add('active');
-      historyNodes[idx].setAttribute('aria-current', 'step');
-      historyLeftBtn.disabled = idx === 0;
-      historyRightBtn.disabled = idx === historyCards.length - 1;
-
-      const card = historyCards[idx];
-      const offset = card.offsetLeft + card.offsetWidth / 2 - historyWrapper.clientWidth / 2;
-      historyTrack.style.transform = 'translateX(' + (-offset) + 'px)';
-      if (historyTimelineTrack && historyTimelineTrack.scrollWidth > historyTimelineTrack.clientWidth) {
-        const node = historyNodes[idx];
-        historyTimelineTrack.scrollTo({
-          left: node.offsetLeft + node.offsetWidth / 2 - historyTimelineTrack.clientWidth / 2,
-          behavior: reduceMotion ? 'instant' : 'smooth'
-        });
-      }
-    }
-
-    historyNodes.forEach((node, i) => {
-      node.addEventListener('click', () => showHistoryCard(i));
-    });
-
-    historyLeftBtn.addEventListener('click', () => showHistoryCard(historyIdx - 1));
-    historyRightBtn.addEventListener('click', () => showHistoryCard(historyIdx + 1));
-
-    window.refreshHistoryCarousel = function() {
-      requestAnimationFrame(() => showHistoryCard(historyIdx));
-    };
-
-    var initIdx = historyCards.length - 1;
-    historyIdx = initIdx;
-    historyCards.forEach(c => c.classList.remove('active', 'adjacent'));
-    historyCards[initIdx].classList.add('active');
-    if (initIdx - 1 >= 0) historyCards[initIdx - 1].classList.add('adjacent');
-    historyNodes.forEach(n => { n.classList.remove('active'); n.removeAttribute('aria-current'); });
-    historyNodes[initIdx].classList.add('active');
-    historyNodes[initIdx].setAttribute('aria-current', 'step');
-
-    var historyObserver = new MutationObserver(function() {
-      if (historyWrapper.offsetWidth > 0) {
-        showHistoryCard(historyIdx);
-        historyObserver.disconnect();
-      }
-    });
-    historyObserver.observe(document.getElementById('tab-history'), { attributes: true, attributeFilter: ['class'] });
-
-    if (historyWrapper.offsetWidth > 0) {
-      showHistoryCard(initIdx);
-      historyObserver.disconnect();
-    }
-
-    window.addEventListener('resize', () => showHistoryCard(historyIdx));
-  }
-
   // ========== 新闻图片轮播 ==========
   const newsSlides = document.querySelectorAll('.news-img-slide');
   const newsDots = document.querySelectorAll('.news-img-dot');
@@ -668,7 +587,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const honorsTrack = document.querySelector('.honors-track');
   if (honorsTrack) {
     const slides = Array.from(honorsTrack.children);
-    slides.forEach(s => honorsTrack.appendChild(s.cloneNode(true)));
+    slides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      clone.tabIndex = -1;
+      honorsTrack.appendChild(clone);
+    });
   }
 
   const certTrack = document.querySelector('.honors-certs-track');
