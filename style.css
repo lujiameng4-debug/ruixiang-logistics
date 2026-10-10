@@ -4540,6 +4540,33 @@ footer[id],
   color: var(--accent);
   box-shadow: 0 1px 5px rgba(26, 43, 59, .11);
 }
+.about-empty-state {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid #e6ebef;
+  border-radius: 20px;
+  background: #f7f9fa;
+  text-align: center;
+}
+.about-empty-tag {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #fff2e8;
+  color: #be5b20;
+  font-size: 12px;
+  font-weight: 700;
+}
+.about-empty-state h3 { margin: 16px 0 8px; color: #18242e; font-size: 24px; }
+.about-empty-state p { margin: 0; color: #667889; font-size: 14px; line-height: 1.7; }
+.about-empty-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+.about-empty-grid span {
+  min-height: 122px;
+  border: 1px dashed #d6dfe6;
+  border-radius: 14px;
+  background: #fff;
+}
 @media (max-width: 768px) {
   .about-tabs {
     width: auto;
@@ -4552,6 +4579,8 @@ footer[id],
     justify-content: flex-start;
   }
   .about-tab { flex: 0 0 auto; min-height: 44px; padding: 10px 16px; }
+  .about-empty-grid { gap: 8px; }
+  .about-empty-grid span { min-height: 84px; }
 }
 
 /* 组织架构：默认收起的部门折叠列表。 */
